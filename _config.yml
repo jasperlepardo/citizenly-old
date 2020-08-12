@@ -14,7 +14,7 @@ title: "" # the name of your site, e.g. ACME Corp.
 #   - vendor/gems/
 #   - vendor/ruby/
 
-# fontawesome: "https://kit.fontawesome.com/9eb6b1689c.js"
+fontawesome: "https://kit.fontawesome.com/9eb6b1689c.js"
 
 # material-icon: "https://fonts.googleapis.com/icon?family=Material+Icons"
 

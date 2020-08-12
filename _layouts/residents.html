@@ -1,0 +1,237 @@
+---
+layout: default
+page-layout: empty
+---
+
+<div class="header">
+  <button class="sub-heading-btn js-go-back" type="button" onclick="history.back(-1)"> <i class="fas fa-arrow-left"></i></button>
+  <h1 class="header-title h5">{{ page.last-name }}, {{ page.first-name }} {{ page.middle-name }}</h1>
+</div>
+<main class="container" id="main-content">
+  <div class="heading">
+    <h1 class="heading-title h3">{{ page.heading-title }}</h1>
+    <p class="heading-subtitle">{{ page.heading-subtitle }}</p>
+  </div>
+  <div class="row">
+    <div class="col-md-8">
+      <div class="card card-bordered card-rounded mb-3">
+        <div class="card-header">
+          <h6 class="card-header-title h4">Basic Details</h6>
+        </div>
+        <div class="list-group list-group-flush list-group-editable list-group-sm">
+
+          <!-- LAST NAME -->
+          {% include components/molecules/list-group/editable/input.html 
+            form-layout="horizontal"
+            isInputLarge=""
+            isInputRequired=""
+            hasFormLabel=""
+            form-label-class="form-label"
+            form-label-size="col-md-4"
+            form-label-text="Last Name"
+            input-size="col-lg"
+            input-type="text"
+            input-name="resident-last-name"
+            input-value=page.last-name
+            input-placeholder="Enter Last Name"
+            hasFormIcon="none"
+            form-icon-name=""
+            form-icon-placement=""
+            hasFormHelper="none"
+            form-helper-text=""
+          %}
+
+          <!-- FIRST NAME -->
+          {% include components/molecules/list-group/editable/input.html 
+            form-layout="horizontal"
+            isInputLarge=""
+            isInputRequired=""
+            hasFormLabel=""
+            form-label-class="form-label"
+            form-label-size="col-md-4"
+            form-label-text="First Name"
+            input-size="col-lg"
+            input-type="text"
+            input-name="resident-first-name"
+            input-value=page.first-name
+            input-placeholder="Enter First Name"
+            hasFormIcon="none"
+            form-icon-name=""
+            form-icon-placement=""
+            hasFormHelper="none"
+            form-helper-text=""
+          %}
+
+          <!-- MIDDLE NAME -->
+          {% include components/molecules/list-group/editable/input.html 
+            form-layout="horizontal"
+            isInputLarge=""
+            isInputRequired=""
+            hasFormLabel=""
+            form-label-class="form-label"
+            form-label-size="col-md-4"
+            form-label-text="Middle Name"
+            input-size="col-lg"
+            input-type="text"
+            input-name="resident-middle-name"
+            input-value=page.middle-name
+            input-placeholder="Enter Middle Name"
+            hasFormIcon="none"
+            form-icon-name=""
+            form-icon-placement=""
+            hasFormHelper="none"
+            form-helper-text=""
+          %}
+
+          <!-- PLACE OF BIRTH -->
+          {% include components/molecules/list-group/editable/input.html 
+            form-layout="horizontal"
+            isInputLarge=""
+            isInputRequired=""
+            hasFormLabel=""
+            form-label-class="form-label"
+            form-label-size="col-md-4"
+            form-label-text="Place of Birth"
+            input-size="col-lg"
+            input-type="text"
+            input-name="resident-place-of-birth"
+            input-value=page.place-of-birth
+            input-placeholder="Enter Place of Birth"
+            hasFormIcon="none"
+            form-icon-name=""
+            form-icon-placement=""
+            hasFormHelper="none"
+            form-helper-text=""
+          %}
+
+          <!-- DATE OF BIRTH -->
+          {% include components/molecules/list-group/editable/input.html 
+            form-layout="horizontal"
+            isInputLarge=""
+            isInputRequired=""
+            hasFormLabel=""
+            form-label-class="form-label"
+            form-label-size="col-md-4"
+            form-label-text="Date of Birth"
+            input-size="col-lg"
+            input-type="text"
+            input-name="resident-date-of-birth"
+            input-value=page.date-of-birth
+            input-placeholder="Enter Date of Birth"
+            hasFormIcon="none"
+            form-icon-name=""
+            form-icon-placement=""
+            hasFormHelper="none"
+            form-helper-text=""
+          %}
+
+          <!-- SEX -->
+          {% include components/molecules/list-group/editable/select.html 
+            form-layout="horizontal"
+            isInputLarge=""
+            isInputRequired=""
+            hasFormLabel=""
+            form-label-class="form-label"
+            form-label-size="col-md-4"
+            form-label-text="Sex"
+            input-size="col-lg"
+            input-type=""
+            input-name="resident-sex"
+            input-value=page.sex
+            input-placeholder="Select Time Zone"
+            hasFormIcon="none"
+            form-icon-name=""
+            form-icon-placement=""
+            hasFormHelper="none"
+            form-helper-text=""
+          %}
+
+          <!-- CIVIL STATUS -->
+          {% include components/molecules/list-group/editable/select.html 
+            form-layout="horizontal"
+            isInputLarge=""
+            isInputRequired=""
+            hasFormLabel=""
+            form-label-class="form-label"
+            form-label-size="col-md-4"
+            form-label-text="Civil Status"
+            input-size="col-lg"
+            input-type=""
+            input-name="resident-civil-status"
+            input-value=page.civil-status
+            input-placeholder="Select Civil Status"
+            hasFormIcon="none"
+            form-icon-name=""
+            form-icon-placement=""
+            hasFormHelper="none"
+            form-helper-text=""
+            list-value-name=site.data.list-value.civil-status
+          %}
+
+          <!-- CITIZENSHIP -->
+          {% include components/molecules/list-group/editable/select.html 
+            form-layout="horizontal"
+            isInputLarge=""
+            isInputRequired=""
+            hasFormLabel=""
+            form-label-class="form-label"
+            form-label-size="col-md-4"
+            form-label-text="Citizenship"
+            input-size="col-lg"
+            input-type=""
+            input-name="resident-citizenship"
+            input-value=page.citizenship
+            input-placeholder="Select Citizenship"
+            hasFormIcon="none"
+            form-icon-name=""
+            form-icon-placement=""
+            hasFormHelper="none"
+            form-helper-text=""
+            list-value-name=site.data.list-value.citizenship
+          %}
+
+          <!-- Occupation -->
+          {% include components/molecules/list-group/editable/select.html 
+            form-layout="horizontal"
+            isInputLarge=""
+            isInputRequired=""
+            hasFormLabel=""
+            form-label-class="form-label"
+            form-label-size="col-md-4"
+            form-label-text="Occupation"
+            input-size="col-lg"
+            input-type=""
+            input-name="resident-occupation"
+            input-value=page.occupation
+            input-placeholder="Select Occupation"
+            hasFormIcon="none"
+            form-icon-name=""
+            form-icon-placement=""
+            hasFormHelper="none"
+            form-helper-text=""
+            list-value-name=site.data.list-value.occupation
+          %}
+        </div>
+      </div>
+
+      <div class="card card-bordered card-rounded mb-3">
+        <div class="card-header">
+          <h6 class="card-header-title h4">Health</h6>
+        </div>
+        <div class="list-group list-group-flush list-group-editable list-group-sm">
+        </div>
+      </div>
+
+      <div class="card card-bordered card-rounded mb-3">
+        <div class="card-header">
+          <h6 class="card-header-title h4">Assets</h6>
+        </div>
+        <div class="list-group list-group-flush list-group-editable list-group-sm">
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  {{ content }}
+</main>

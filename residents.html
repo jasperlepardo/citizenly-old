@@ -1,0 +1,120 @@
+---
+layout: default
+container-type: container
+header-title: Residents
+heading-title: <a class="btn btn-primary" href="">Add New Residents</a>
+heading-subtitle: 
+---
+
+<!-- {% include components/molecules/nav-tabs.html
+  nav-type="nav-tabs"
+  isLarge=""
+  isStacked=""
+  isJustified=""
+  list-value-name=site.data.navigation.product
+  hasIcon=""
+%}
+ -->
+<table class="table table-hover">
+  <thead>
+    <tr>
+      <th style="width: 1px;"></th>
+      <!-- <th><a href="">ID Number</a></th> -->
+      <th><a href="">Name</a></th>
+      <!-- <th>Address</th> -->
+      <!-- <th>Purok</th> -->
+      <th><a href="">Place of Birth</a></th>
+      <th><a href="">Date of Birth</a></th>
+      <th><a href="">Sex</a></th>
+      <th><a href="">Civil Status</a></th>
+      <th><a href="">Citizenship</a></th>
+      <th><a href="">Occupation</a></th>
+      <th style="width: 1px;"></th>
+    </tr>
+  </thead>
+  <tbody>
+    {% for resident in site.residents %}
+      <tr>
+        <td><input type="checkbox" value="" id=""></td>
+        <!-- <td>PSN-1234-5678912-3</td> -->
+        <td><a href="{{ resident.url }}">{{ resident.last-name }}, {{ resident.first-name }} {{ resident.middle-name }}</a></td>
+        <!-- <td>I48 P. Ferma</td> -->
+        <!-- <td>-</td> -->
+        <td>{{ resident.place-of-birth }}</td>
+        <td>{{ resident.date-of-birth }}</td>
+        <td>{{ resident.sex }}</td>
+        <td>{{ resident.civil-status }}</td>
+        <td>{{ resident.citizenship }}</td>
+        <td>{{ resident.occupation }}</td>
+        <td>
+          <div class="dropdown">
+            <a href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="fas fa-ellipsis-v"></i></a>
+            <div class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenuLink">
+              <a class="dropdown-item" href="#">Add</a>
+              <a class="dropdown-item" href="#">Edit</a>
+              <a class="dropdown-item" href="#">Delete</a>
+            </div>
+          </div>
+        </td>
+      </tr>
+    {% endfor %}
+  </tbody>
+</table>
+<!-- 
+<div class="row">
+  <div class="col-lg-6">
+    <div class="card">
+      <div class="card-body">
+        <div class="media">
+          <img class="rounded-circle mr-3" src="/assets/img/avatar.png" alt="" width="48" height="48">
+          <div class="media-body">
+            <h1 class="card-title h4 mb-0">Jasper John L. Lepardo</h1>
+            <p class="card-text"></p>
+          </div>
+        </div>
+      </div>
+      <div class="list-group list-group-flush list-group-editable list-group-sm">
+        <div class="list-group-item list-group-item-action">
+          <div class="form-group row">
+            <label class="form-label col-lg-4" for="branch-legal-business-name">Gender</label>
+            <div class="col-lg">
+              <p class="form-control-plaintext">Male</p>
+            </div>
+          </div>
+        </div>
+        <div class="list-group-item list-group-item-action">
+          <div class="form-group row">
+            <label class="form-label col-lg-4" for="branch-legal-business-name">Status</label>
+            <div class="col-lg">
+              <p class="form-control-plaintext">Single</p>
+            </div>
+          </div>
+        </div>
+        <div class="list-group-item list-group-item-action">
+          <div class="form-group row">
+            <label class="form-label col-lg-4" for="branch-legal-business-name">Birthday</label>
+            <div class="col-lg">
+              <p class="form-control-plaintext">May 12 1993</p>
+            </div>
+          </div>
+        </div>
+        <div class="list-group-item list-group-item-action">
+          <div class="form-group row">
+            <label class="form-label col-lg-4" for="branch-legal-business-name">Age</label>
+            <div class="col-lg">
+              <p class="form-control-plaintext">26</p>
+            </div>
+          </div>
+        </div>
+        <div class="list-group-item list-group-item-action">
+          <div class="form-group row">
+            <label class="form-label col-lg-4" for="branch-legal-business-name">Occupation</label>
+            <div class="col-lg">
+              <p class="form-control-plaintext">Employed</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div> -->
