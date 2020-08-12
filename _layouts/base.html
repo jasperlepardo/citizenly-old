@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, viewport-fit=cover, initial-scale=1.0, maximum-scale=1, user-scalable=no">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    
+    <meta name="apple-mobile-web-app-capable" content="yes"/>
+    <meta name="apple-mobile-web-app-status-bar-style" content="black"/>
+
+    {% include favicons.html %}
+
+    <title>{{ site.title }}</title>
+
+    {% if site.custom-font %}
+      <!-- Custom Font -->
+      <link href="{{ site.custom-font }}" rel="stylesheet">
+    {% endif %}
+
+    {% if site.fontawesome %}
+      <!-- FontAwesome 5 -->
+      <script src="{{ site.fontawesome }}" crossorigin="anonymous"></script>
+    {% endif %}
+
+    {% if site.material-icon %}
+      <!-- Google Material Icon -->
+      <script src="{{ site.material-icon }}" crossorigin="anonymous"></script>
+    {% endif %}
+
+    <!-- STYLESHEET -->
+
+    <!-- Main -->
+    <link rel="stylesheet" href="{{ site.baseurl }}/assets/css/{{ site.stylesheet }}.css">
+
+    <!-- Global -->
+    <link rel="stylesheet" href="{{ site.baseurl }}/assets/css/global.css">
+
+    {% if layout.layout-styles %}
+      <!-- Layout Specific CSS -->
+      <link rel="stylesheet" href="{{ site.baseurl }}/assets/css/{{ layout.layout-styles }}.css">
+    {% endif %}
+
+    <!-- PLUGINS -->
+
+    <!-- PWA -->
+    <!-- <link rel="manifest" href="{{ site.baseurl }}/manifest.json"> -->
+
+  </head>
+
+  <body>
+
+    {{ content }}
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+    <script src="{{ site.baseurl }}/assets/js/functions.js"></script>
+
+    <!-- PLUGINS -->
+
+  </body>
+
+</html>

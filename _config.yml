@@ -1,0 +1,28 @@
+url: "" # the base hostname & protocol for your site, e.g. http://example.com
+baseurl: "" # the subpath of your site, e.g. /blog
+title: "" # the name of your site, e.g. ACME Corp.
+
+# Exclude from processing.
+# The following items will not be processed, by default. Create a custom list
+# to override the default setting.
+# exclude:
+#   - Gemfile
+#   - Gemfile.lock
+#   - node_modules
+#   - vendor/bundle/
+#   - vendor/cache/
+#   - vendor/gems/
+#   - vendor/ruby/
+
+# custom-font:
+
+# fontawesome: "https://kit.fontawesome.com/9eb6b1689c.js"
+
+# material-icon: "https://fonts.googleapis.com/icon?family=Material+Icons"
+
+font: 
+
+sass:
+  style: compressed # possible values: nested expanded compact compressed
+
+stylesheet: main
