@@ -12,8 +12,8 @@
 
     <title>{{ site.title }}</title>
 
-    {% if site.custom-font %}
-      <!-- Custom Font -->
+    {% if site.google-font %}
+      <!-- Google Font -->
       <link href="{{ site.custom-font }}" rel="stylesheet">
     {% endif %}
 
@@ -29,8 +29,13 @@
 
     <!-- STYLESHEET -->
 
-    <!-- Main -->
-    <link rel="stylesheet" href="{{ site.baseurl }}/assets/css/{{ site.stylesheet }}.css">
+    {% if site.external-stylesheet %}
+      <!-- External Stylesheet -->
+      <link rel="stylesheet" href="{{external-stylesheet}}">
+      {% else %}
+      <!-- Main -->
+      <link rel="stylesheet" href="{{ site.baseurl }}/assets/css/{{ site.stylesheet }}.css">
+    {% endif %}
 
     <!-- Global -->
     <link rel="stylesheet" href="{{ site.baseurl }}/assets/css/global.css">

@@ -14,15 +14,20 @@ title: "" # the name of your site, e.g. ACME Corp.
 #   - vendor/gems/
 #   - vendor/ruby/
 
-# custom-font:
-
 # fontawesome: "https://kit.fontawesome.com/9eb6b1689c.js"
 
 # material-icon: "https://fonts.googleapis.com/icon?family=Material+Icons"
 
-font: 
+google-font: "https://fonts.googleapis.com/css?family=Open+Sans:300,400,600&display=swap"
 
 sass:
   style: compressed # possible values: nested expanded compact compressed
 
+# external-stylesheet:
+
 stylesheet: main
+
+collections:
+  residents:
+    output: true
+    permalink: residents/:path/
