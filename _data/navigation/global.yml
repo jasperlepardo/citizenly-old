@@ -1,6 +1,6 @@
 - text: Dashboard
   icon: fas fa-tachometer-alt
-  url: dashboard.html
+  url: /
 
 - text: Residents
   icon: fas fa-users
