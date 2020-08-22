@@ -2,6 +2,15 @@ url: "" # the base hostname & protocol for your site, e.g. http://example.com
 baseurl: "/citizenly" # the subpath of your site, e.g. /blog
 title: "" # the name of your site, e.g. ACME Corp.
 
+# Open Graph Specific Tags
+open-graph:
+  type: ""
+  image: ""
+
+twitter:
+  type: "" #The card type, which will be one of “summary”, “summary_large_image”, “app”, or “player”.
+  id: "2582378478"
+  
 # Exclude from processing.
 # The following items will not be processed, by default. Create a custom list
 # to override the default setting.
@@ -20,12 +29,14 @@ fontawesome: "https://kit.fontawesome.com/9eb6b1689c.js"
 
 google-font: "https://fonts.googleapis.com/css?family=Open+Sans:300,400,600&display=swap"
 
+# isPWA: true
+
+# swup-animation: "https://unpkg.com/swup@latest/dist/swup.min.js"
+
 sass:
   style: compressed # possible values: nested expanded compact compressed
 
-# external-stylesheet:
-
-stylesheet: main
+stylesheet: # place external url here
 
 collections:
   residents:

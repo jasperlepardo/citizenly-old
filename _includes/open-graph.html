@@ -1,0 +1,29 @@
+<!-- define ogp type -->
+<meta property="og:type" content="{{ site.open-graph.type | default: "website" }}" />
+
+<!-- define ogp and itemprop of microdata in one line -->
+<meta property="og:url" content="{{ site.url }}{{ site.baseurl }}{{ page.url }}">
+
+<!-- define ogp and itemprop of microdata in one line -->
+<meta property="og:title" itemprop="name" content="{{ site.title }}">
+
+<!-- define description for ogp and itemprop of microdata in one line -->
+<meta property="og:description" itemprop="description" content="{{ site.description }}">
+
+<!-- define ogp image -->
+<meta property="og:image" content="{{ site.open-graph.image }}">
+
+<!-- define twitter cards type -->
+<meta name="twitter:card" content="{{ site.twitter.type }}">
+
+<!-- define site's owner twitter id -->
+<meta name="twitter:site" content="{{ site.twitter.id }}">
+
+<!-- general title (separate with ogp and microdata) -->
+<title>{{ site.title }}</title>
+
+<!-- general description (separate with ogp and microdata) -->
+<meta name="description" content="{{ site.description }}">
+
+<!-- use link[href] to define image url for microdata -->
+<link itemprop="image" href="{{ site.open-graph.image }}">

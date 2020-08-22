@@ -1,0 +1,23 @@
+{% for nav in include.data %}
+  <ul class="nav {{ nav.class }}">
+    {% for menu in nav.menu %}
+      <li class="nav-item">
+        {% if nav.type == "tabs" %}
+          <a class="nav-link {% if forloop.first %} active {% endif %}" href="#{{ menu.url }}-tab" data-toggle="tab">
+            {% if menu.icon %}
+              <i class="nav-link-icon {{ menu.icon }}"></i>
+            {% endif %}
+            <span class="nav-link-text">{{ menu.text }}</span>
+          </a>
+          {% else %}
+          <a class="nav-link {% if page.url contains menu.url %} active {% endif %}" href="{{ site.baseurl }}/{{ menu.url }}">
+            {% if menu.icon %}
+              <i class="nav-link-icon {{ menu.icon }}"></i>
+            {% endif %}
+            <span class="nav-link-text">{{menu.text}}</span>
+          </a>
+        {% endif %}
+      </li>
+    {% endfor %}
+  </ul>
+{% endfor %}

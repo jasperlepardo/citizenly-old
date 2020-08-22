@@ -4,13 +4,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, viewport-fit=cover, initial-scale=1.0, maximum-scale=1, user-scalable=no">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    
+  
     <meta name="apple-mobile-web-app-capable" content="yes"/>
     <meta name="apple-mobile-web-app-status-bar-style" content="black"/>
 
     {% include favicons.html %}
 
-    <title>{{ site.title }}</title>
+    {% include open-graph.html %}
 
     {% if site.google-font %}
       <!-- Google Font -->
@@ -29,32 +29,40 @@
 
     <!-- STYLESHEET -->
 
-    {% if site.external-stylesheet %}
-      <!-- External Stylesheet -->
-      <link rel="stylesheet" href="{{external-stylesheet}}">
-      {% else %}
-      <!-- Main -->
-      <link rel="stylesheet" href="{{ site.baseurl }}/assets/css/{{ site.stylesheet }}.css">
-    {% endif %}
+    <!-- Main -->
+    <link rel="stylesheet" href="{{ site.baseurl }}/assets/css/{{ site.stylesheet | default: "main" }}.css">
 
     <!-- Global -->
     <link rel="stylesheet" href="{{ site.baseurl }}/assets/css/global.css">
 
-    {% if layout.layout-styles %}
+    {% if layout.custom-stylesheet %}
       <!-- Layout Specific CSS -->
-      <link rel="stylesheet" href="{{ site.baseurl }}/assets/css/{{ layout.layout-styles }}.css">
+      <link rel="stylesheet" href="{{ site.baseurl }}/assets/css/{{ layout.custom-stylesheet }}.css">
+    {% endif %}
+
+    {% if page.custom-stylesheet %}
+      <!-- Page Specific CSS -->
+      <link rel="stylesheet" href="{{ site.baseurl }}/assets/css/{{ page.custom-stylesheet }}.css">
     {% endif %}
 
     <!-- PLUGINS -->
 
-    <!-- PWA -->
-    <!-- <link rel="manifest" href="{{ site.baseurl }}/manifest.json"> -->
+    {% if site.isPWA %}
+      <!-- PWA -->
+      <link rel="manifest" href="{{ site.baseurl }}/manifest.json">
+    {% endif %}
 
   </head>
 
   <body>
 
-    {{ content }}
+    {% if site.swup-animation %}
+      <div class="transition-{% if page.transition %}{{page.transition}}{% else %}{{ layout.transition }}{%endif%}" id="swup">
+        {{ content }}
+      </div>
+      {% else %}
+      {{ content }}
+    {% endif %}
 
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
@@ -62,6 +70,11 @@
     <script src="{{ site.baseurl }}/assets/js/functions.js"></script>
 
     <!-- PLUGINS -->
+
+    {% if site.swup-animation %}
+      <script defer src="{{ site.swup-animation }}"></script>
+      <script defer src="{{ site.baseurl }}/assets/plugins/swup/js/swup.js"></script>
+    {% endif %}
 
   </body>
 

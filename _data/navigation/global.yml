@@ -1,31 +1,27 @@
-- text: Dashboard
-  icon: fas fa-tachometer-alt
-  url: 
-
-- text: Residents
-  icon: fas fa-users
-  url: residents.html
-
-- text: Households
-  icon: fas fa-home
-  url: households.html
-
-- text: Business
-  icon: fas fa-building
-  url: business.html
-
-- text: Judiciary
-  icon: fas fa-balance-scale
-  url: judiciary.html
-
-- text: Certification
-  icon: fas fa-stamp
-  url: certification.html
-
-- text: Reports
-  icon: fas fa-chart-pie
-  url: reports.html
-
-- text: Settings
-  icon: fas fa-cog
-  url: settings.html
+- class: "nav-pills nav-justified w-100"
+  type: 
+  menu:
+  - text: Dashboard
+    icon: fas fa-tachometer-alt
+    url: 
+  - text: Residents
+    icon: fas fa-users
+    url: residents.html
+  - text: Households
+    icon: fas fa-home
+    url: households.html
+  - text: Business
+    icon: fas fa-building
+    url: business.html
+  - text: Judiciary
+    icon: fas fa-balance-scale
+    url: judiciary.html
+  - text: Certification
+    icon: fas fa-stamp
+    url: certification.html
+  - text: Reports
+    icon: fas fa-chart-pie
+    url: reports.html
+  - text: Settings
+    icon: fas fa-cog
+    url: settings.html

@@ -1,0 +1,10 @@
+{% for button in field.buttons %}
+  {% assign button-name = button.name | split: " " | join: "-" | downcase %}
+  {% if button.type == "anchor" %}
+    {% include components/atoms/buttons/anchor.html %}
+  {% elsif button.type == "button" %}
+    {% include components/atoms/buttons/button.html %}
+  {% elsif button.type == "input" %}
+    {% include components/atoms/buttons/input.html %}
+  {% endif %}
+{% endfor %}

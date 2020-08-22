@@ -1,0 +1,3 @@
+{% assign form-name = form.name | split: " " | join: "-" | downcase %}
+{% assign button-name = button.name | split: " " | join: "-" | downcase %}
+<a class="btn btn-{{ button.class | default: "default" }}" id="{{ form-name }}-{{ button-name }}-button" name="{{ form-name }}-{{ button-name }}-button" href="{{ button.url }}" target="{{ button.target }}">{{ button.name }}</a>

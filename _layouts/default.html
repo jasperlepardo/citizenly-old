@@ -1,57 +1,53 @@
 ---
 layout: base
+layout-type: #container | container-fluid
+custom-stylesheet: 
 ---
 
 <div class="navbar navbar-expand-lg navbar-light" id="left-panel">
-    <a class="navbar-brand" href="{{ site.baseurl }}/">Citizenly</a>
-    <div class="collapse navbar-collapse" id="global-slider">
-      <div class="navbar-wrapper">
-        <a href="">
-          <p>Anuling Cerca I<br/>Mendez Nuñez, Cavite</p>
-        </a>
-        {% include components/molecules/nav-menu.html
-          nav-type="navbar-nav"
-          isLarge=""
-          isStacked="flex-column"
-          isJustified=""
-          list-value-name=site.data.navigation.global
-          hasIcon="false"
-        %}
-        <ul class="navbar-nav flex-column mt-auto">
-          <li class="nav-item dropup">
-            <a class="nav-link" data-toggle="dropdown" href="" aria-expanded="false">
-              <div class="media">
-                <div class="mr-3">
-                  <img class="rounded-circle" src="{{ site.baseurl }}/assets/img/avatar.png" width="32" height="32" alt="">
-                </div>
-                <div class="media-body align-self-center">
-                  Jasper Lepardo
-                </div>
+  <a class="navbar-brand" href="{{ site.baseurl }}/">Citizenly</a>
+  <div class="collapse navbar-collapse" id="global-slider">
+    <div class="navbar-wrapper">
+      <a href="">
+        <p>Anuling Cerca I<br/>Mendez Nuñez, Cavite</p>
+      </a>
+      {% include components/molecules/nav.html data=site.data.navigation.global %}
+      <ul class="navbar-nav flex-column mt-auto">
+        <li class="nav-item dropup">
+          <a class="nav-link" data-toggle="dropdown" href="" aria-expanded="false">
+            <div class="media">
+              <div class="mr-3">
+                <img class="rounded-circle" src="{{ site.baseurl }}/assets/img/avatar.png" width="32" height="32" alt="">
               </div>
-            </a>
-            <div class="dropdown-menu dropdown-menu-right">
-              <a class="dropdown-item" href="#"><i class="fas fa-sign-out-alt mr-2"></i>Logout</a>
+              <div class="media-body align-self-center">
+                Jasper Lepardo
+              </div>
             </div>
-          </li>
-        </ul>
-      </div>
+          </a>
+          <div class="dropdown-menu dropdown-menu-right">
+            <a class="dropdown-item" href="#"><i class="fas fa-sign-out-alt mr-2"></i>Logout</a>
+          </div>
+        </li>
+      </ul>
     </div>
-    <div class="slider-overlay"></div>
   </div>
-  
-  <div id="main-panel">
-    {% if layout.page-layout == "empty" %}
-      {{ content }}
-      {% else %}
-      <div class="header">
-        <h1 class="header-title h5">{{ page.header-title }}</h1>
+  <div class="slider-overlay"></div>
+</div>
+
+<div id="main-panel">
+  {% if layout.page-layout == "empty" %}
+    {{ content }}
+    {% else %}
+    <div class="header">
+      <h1 class="header-title h5">{{ page.header-title }}</h1>
+    </div>
+    <main class="{% if page.layout-type %}{{page.layout-type}}{% else %}{{ layout.layout-type | default: "container"}}{%endif%}" id="main-content">
+      <div class="heading">
+        <h1 class="heading-title h3">{{ page.heading-title }}</h1>
+        <p class="heading-subtitle">{{ page.heading-subtitle }}</p>
       </div>
-      <main class="{{ page.container-type }}" id="main-content">
-        <div class="heading">
-          <h1 class="heading-title h3">{{ page.heading-title }}</h1>
-          <p class="heading-subtitle">{{ page.heading-subtitle }}</p>
-        </div>
-        {{ content }}
-      </main>
-    {% endif %}
-  </div>
+      {{ content }}
+    </main>
+  {% endif %}
+</div>
+
