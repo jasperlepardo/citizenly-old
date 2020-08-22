@@ -1,9 +1,9 @@
-- class: "nav-pills nav-justified w-100"
+- class: "nav-pills nav-stacked flex-column w-100"
   type: 
   menu:
   - text: Dashboard
     icon: fas fa-tachometer-alt
-    url: 
+    url: dashboard.html
   - text: Residents
     icon: fas fa-users
     url: residents.html
