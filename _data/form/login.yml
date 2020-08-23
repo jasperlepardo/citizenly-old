@@ -1,0 +1,20 @@
+- name: Login
+  action: 
+  method: 
+  layout: horizontal
+  hasLabel: true
+  fields: 
+    - name: Email Address
+      type: email
+      placeholder: you_name@company.com
+      value: 
+      icon: 
+      helper: 
+      source:
+    - name: Password
+      type: password
+      placeholder: 
+      value: 
+      icon: 
+      helper: 
+      source:

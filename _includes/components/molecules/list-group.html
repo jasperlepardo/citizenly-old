@@ -1,0 +1,48 @@
+{% assign form-name = form.name  | split: " " | join: "-" | downcase %}
+{% assign field-name = field.name | split: " " | join: "-" | downcase %}
+
+{% if field.type == "button" %}
+  <div class="list-group-item list-group-item-action">
+    <div class="row">
+      <div class="{{ field.field-size | default: 'col-md-6' }} {{ field.label-size | default: 'offset-md-3' }}">
+        {% include components/atoms/buttons.html %}
+      </div>
+    </div>
+  </div>
+{% else %}
+  {% if include.form == "edit-only" %}
+    <div class="list-group-item list-group-item-action" id="{{ form-name }}-{{ field-name }}">
+      <div class="form-group row">
+        {% include components/atoms/fields/label.html %}
+        <div class="{{ field.field-size | default: 'col-md-6' }}">
+          <div class="list-group-item-view-mode">
+            {% include components/atoms/fields/plaintext.html %}
+          </div>
+          <div class="list-group-item-edit-mode">
+            {% include components/atoms/fields.html %}            
+          </div>
+          {% include components/atoms/fields/helper.html %}
+        </div>
+      </div>
+      <div class="list-group-item-btn">
+        <a class="btn btn-link btn-edit"><i class="fas fa-pen"></i></a>
+        <a class="btn btn-link btn-close"><i class="fas fa-times"></i></a>
+        <a class="btn btn-link btn-check"><i class="fas fa-check"></i></a>
+      </div>  
+    </div>
+    {% else %}
+    <div class="list-group-item" id="{{ form-name }}-{{ field-name }}">
+      <div class="form-group row">
+        {% include components/atoms/fields/label.html %}
+        <div class="{{ field.field-size | default: 'col-md-6' }}">
+          <div class="list-group-item-edit-mode">
+            {% include components/atoms/fields.html %}
+          </div>
+          {% include components/atoms/fields/helper.html %}
+        </div>
+      </div>
+    </div>
+      
+  {% endif %}
+{% endif %}
+

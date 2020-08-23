@@ -1,3 +1,6 @@
 {% assign form-name = form.name  | split: " " | join: "-" | downcase %}
 {% assign field-name = field.name | split: " " | join: "-" | downcase %}
-<p class="form-control-plaintext">{{ field.value }}</p>
+
+{% assign value = page.[field.value] %}
+
+<p class="form-control-plaintext">{{ value | date: "%b %d, %Y" }}</p>

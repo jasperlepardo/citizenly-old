@@ -1,24 +1,9 @@
-{% if field.icon %}
-  <div class="form-icon form-icon-{{ field.icon-placement }}">
-    {% if field.type == "email" or field.type == "number" or field.type == "password" or field.type == "search" or field.type == "text" %}
-      {% include components/atoms/fields/input.html %}
-    {% elsif field.type == "select" %}
-      {% include components/atoms/fields/select.html %}
-    {% elsif field.type == "textarea" %}
-      {% include components/atoms/fields/textarea.html %}
-    {% elsif field.type == "plaintext" %}
-      {% include components/atoms/fields/plaintext.html %}
-    {% endif %}
-    {% include components/atoms/fields/icon.html %}
-  </div>
-  {% else %}
-  {% if field.type == "email" or field.type == "number" or field.type == "password" or field.type == "search" or field.type == "text" %}
-    {% include components/atoms/fields/input.html %}
-  {% elsif field.type == "select" %}
-    {% include components/atoms/fields/select.html %}
-  {% elsif field.type == "textarea" %}
-    {% include components/atoms/fields/textarea.html %}
-  {% elsif field.type == "plaintext" %}
-    {% include components/atoms/fields/plaintext.html %}
-  {% endif %}
+{% if field.type == "date" or field.type == "email" or field.type == "number" or field.type == "password" or field.type == "search" or field.type == "text" %}
+  {% include components/atoms/fields/input.html %}
+{% elsif field.type == "select" %}
+  {% include components/atoms/fields/select.html %}
+{% elsif field.type == "textarea" %}
+  {% include components/atoms/fields/textarea.html %}
+{% elsif field.type == "plaintext" or include.type == "plainext" %}
+  {% include components/atoms/fields/plaintext.html %}
 {% endif %}

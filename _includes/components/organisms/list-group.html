@@ -1,0 +1,13 @@
+{% for form in include.data %}
+  {% assign form-name = form.name | split: " " | join: "-" | downcase %}
+  <form name="{{ form-name }}-form" {% if form.action %} action="{{ form.action }}" {% endif %} {% if form.method %} method="{{ form.method }}" {% endif %}>
+    <div class="list-group list-group-flush">
+      {% for field in form.fields %}
+        {% include components/molecules/list-group.html %}
+      {% endfor %}
+    </div>
+  </form>
+{% endfor %}
+
+
+

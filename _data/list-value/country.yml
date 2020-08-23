@@ -1,722 +1,722 @@
-- text: Afghanistan
+- name: Afghanistan
   value: AF
 
-- text: Albania
+- name: Albania
   value: AL
 
-- text: Algeria
+- name: Algeria
   value: DZ
 
-- text: American Samoa
+- name: American Samoa
   value: AS
 
-- text: Andorra
+- name: Andorra
   value: AD
 
-- text: Angola
+- name: Angola
   value: AO
 
-- text: Anguilla
+- name: Anguilla
   value: AI
 
-- text: Antarctica
+- name: Antarctica
   value: AQ
 
-- text: Antigua And Barbuda
+- name: Antigua And Barbuda
   value: AG
 
-- text: Argentina
+- name: Argentina
   value: AR
 
-- text: Armenia
+- name: Armenia
   value: AM
 
-- text: Aruba
+- name: Aruba
   value: AW
 
-- text: Australia
+- name: Australia
   value: AU
 
-- text: Austria
+- name: Austria
   value: AT
 
-- text: Azerbaijan
+- name: Azerbaijan
   value: AZ
 
-- text: Bahamas
+- name: Bahamas
   value: BS
 
-- text: Bahrain
+- name: Bahrain
   value: BH
 
-- text: Bangladesh
+- name: Bangladesh
   value: BD
 
-- text: Barbados
+- name: Barbados
   value: BB
 
-- text: Belarus
+- name: Belarus
   value: BY
 
-- text: Belgium
+- name: Belgium
   value: BE
 
-- text: Belize
+- name: Belize
   value: BZ
 
-- text: Benin
+- name: Benin
   value: BJ
 
-- text: Bermuda
+- name: Bermuda
   value: BM
 
-- text: Bhutan
+- name: Bhutan
   value: BT
 
-- text: Bolivia
+- name: Bolivia
   value: BO
 
-- text: Bosnia And Herzegovina
+- name: Bosnia And Herzegovina
   value: BA
 
-- text: Botswana
+- name: Botswana
   value: BW
 
-- text: Bouvet Island
+- name: Bouvet Island
   value: BV
 
-- text: Brazil
+- name: Brazil
   value: BR
 
-- text: British Indian Ocean Territory
+- name: British Indian Ocean Territory
   value: IO
 
-- text: Brunei Darussalam
+- name: Brunei Darussalam
   value: BN
 
-- text: Bulgaria
+- name: Bulgaria
   value: BG
 
-- text: Burkina Faso
+- name: Burkina Faso
   value: BF
 
-- text: Burundi
+- name: Burundi
   value: BI
 
-- text: Cambodia
+- name: Cambodia
   value: KH
 
-- text: Cameroon
+- name: Cameroon
   value: CM
 
-- text: Canada
+- name: Canada
   value: CA
 
-- text: Cape Verde
+- name: Cape Verde
   value: CV
 
-- text: Cayman Islands
+- name: Cayman Islands
   value: KY
 
-- text: Central African Republic
+- name: Central African Republic
   value: CF
 
-- text: Chad
+- name: Chad
   value: TD
 
-- text: Chile
+- name: Chile
   value: CL
 
-- text: China
+- name: China
   value: CN
 
-- text: Christmas Island
+- name: Christmas Island
   value: CX
 
-- text: Cocos (keeling) Islands
+- name: Cocos (keeling) Islands
   value: CC
 
-- text: Colombia
+- name: Colombia
   value: CO
 
-- text: Comoros
+- name: Comoros
   value: KM
 
-- text: Congo
+- name: Congo
   value: CG
 
-- text: Congo, The Democratic Republic Of The
+- name: Congo, The Democratic Republic Of The
   value: CD
 
-- text: Cook Islands
+- name: Cook Islands
   value: CK
 
-- text: Costa Rica
+- name: Costa Rica
   value: CR
 
-- text: 'Cote D''ivoire'
+- name: 'Cote D''ivoire'
   value: CI
 
-- text: Croatia
+- name: Croatia
   value: HR
 
-- text: Cuba
+- name: Cuba
   value: CU
 
-- text: Cyprus
+- name: Cyprus
   value: CY
 
-- text: Czech Republic
+- name: Czech Republic
   value: CZ
 
-- text: Denmark
+- name: Denmark
   value: DK
 
-- text: Djibouti
+- name: Djibouti
   value: DJ
 
-- text: Dominica
+- name: Dominica
   value: DM
 
-- text: Dominican Republic
+- name: Dominican Republic
   value: DO
 
-- text: East Timor
+- name: East Timor
   value: TP
 
-- text: Ecuador
+- name: Ecuador
   value: EC
 
-- text: Egypt
+- name: Egypt
   value: EG
 
-- text: El Salvador
+- name: El Salvador
   value: SV
 
-- text: Equatorial Guinea
+- name: Equatorial Guinea
   value: GQ
 
-- text: Eritrea
+- name: Eritrea
   value: ER
 
-- text: Estonia
+- name: Estonia
   value: EE
 
-- text: Ethiopia
+- name: Ethiopia
   value: ET
 
-- text: Falkland Islands (malvinas)
+- name: Falkland Islands (malvinas)
   value: FK
 
-- text: Faroe Islands
+- name: Faroe Islands
   value: FO
 
-- text: Fiji
+- name: Fiji
   value: FJ
 
-- text: Finland
+- name: Finland
   value: FI
 
-- text: France
+- name: France
   value: FR
 
-- text: French Guiana
+- name: French Guiana
   value: GF
 
-- text: French Polynesia
+- name: French Polynesia
   value: PF
 
-- text: French Southern Territories
+- name: French Southern Territories
   value: TF
 
-- text: Gabon
+- name: Gabon
   value: GA
 
-- text: Gambia
+- name: Gambia
   value: GM
 
-- text: Georgia
+- name: Georgia
   value: GE
 
-- text: Germany
+- name: Germany
   value: DE
 
-- text: Ghana
+- name: Ghana
   value: GH
 
-- text: Gibraltar
+- name: Gibraltar
   value: GI
 
-- text: Greece
+- name: Greece
   value: GR
 
-- text: Greenland
+- name: Greenland
   value: GL
 
-- text: Grenada
+- name: Grenada
   value: GD
 
-- text: Guadeloupe
+- name: Guadeloupe
   value: GP
 
-- text: Guam
+- name: Guam
   value: GU
 
-- text: Guatemala
+- name: Guatemala
   value: GT
 
-- text: Guinea
+- name: Guinea
   value: GN
 
-- text: Guinea-bissau
+- name: Guinea-bissau
   value: GW
 
-- text: Guyana
+- name: Guyana
   value: GY
 
-- text: Haiti
+- name: Haiti
   value: HT
 
-- text: Heard Island And Mcdonald Islands
+- name: Heard Island And Mcdonald Islands
   value: HM
 
-- text: Holy See (vatican City State)
+- name: Holy See (vatican City State)
   value: VA
 
-- text: Honduras
+- name: Honduras
   value: HN
 
-- text: Hong Kong
+- name: Hong Kong
   value: HK
 
-- text: Hungary
+- name: Hungary
   value: HU
 
-- text: Iceland
+- name: Iceland
   value: IS
 
-- text: India
+- name: India
   value: IN
 
-- text: Indonesia
+- name: Indonesia
   value: ID
 
-- text: Iran, Islamic Republic Of
+- name: Iran, Islamic Republic Of
   value: IR
 
-- text: Iraq
+- name: Iraq
   value: IQ
 
-- text: Ireland
+- name: Ireland
   value: IE
 
-- text: Israel
+- name: Israel
   value: IL
 
-- text: Italy
+- name: Italy
   value: IT
 
-- text: Jamaica
+- name: Jamaica
   value: JM
 
-- text: Japan
+- name: Japan
   value: JP
 
-- text: Jordan
+- name: Jordan
   value: JO
 
-- text: Kazakstan
+- name: Kazakstan
   value: KZ
 
-- text: Kenya
+- name: Kenya
   value: KE
 
-- text: Kiribati
+- name: Kiribati
   value: KI
 
-- text: 'Korea, Democratic People''s Republic Of'
+- name: 'Korea, Democratic People''s Republic Of'
   value: KP
 
-- text: Korea, Republic Of
+- name: Korea, Republic Of
   value: KR
 
-- text: Kosovo
+- name: Kosovo
   value: KV
 
-- text: Kuwait
+- name: Kuwait
   value: KW
 
-- text: Kyrgyzstan
+- name: Kyrgyzstan
   value: KG
 
-- text: 'Lao People''s Democratic Republic'
+- name: 'Lao People''s Democratic Republic'
   value: LA
 
-- text: Latvia
+- name: Latvia
   value: LV
 
-- text: Lebanon
+- name: Lebanon
   value: LB
 
-- text: Lesotho
+- name: Lesotho
   value: LS
 
-- text: Liberia
+- name: Liberia
   value: LR
 
-- text: Libyan Arab Jamahiriya
+- name: Libyan Arab Jamahiriya
   value: LY
 
-- text: Liechtenstein
+- name: Liechtenstein
   value: LI
 
-- text: Lithuania
+- name: Lithuania
   value: LT
 
-- text: Luxembourg
+- name: Luxembourg
   value: LU
 
-- text: Macau
+- name: Macau
   value: MO
 
-- text: Macedonia, The Former Yugoslav Republic Of
+- name: Macedonia, The Former Yugoslav Republic Of
   value: MK
 
-- text: Madagascar
+- name: Madagascar
   value: MG
 
-- text: Malawi
+- name: Malawi
   value: MW
 
-- text: Malaysia
+- name: Malaysia
   value: MY
 
-- text: Maldives
+- name: Maldives
   value: MV
 
-- text: Mali
+- name: Mali
   value: ML
 
-- text: Malta
+- name: Malta
   value: MT
 
-- text: Marshall Islands
+- name: Marshall Islands
   value: MH
 
-- text: Martinique
+- name: Martinique
   value: MQ
 
-- text: Mauritania
+- name: Mauritania
   value: MR
 
-- text: Mauritius
+- name: Mauritius
   value: MU
 
-- text: Mayotte
+- name: Mayotte
   value: YT
 
-- text: Mexico
+- name: Mexico
   value: MX
 
-- text: Micronesia, Federated States Of
+- name: Micronesia, Federated States Of
   value: FM
 
-- text: Moldova, Republic Of
+- name: Moldova, Republic Of
   value: MD
 
-- text: Monaco
+- name: Monaco
   value: MC
 
-- text: Mongolia
+- name: Mongolia
   value: MN
 
-- text: Montserrat
+- name: Montserrat
   value: MS
 
-- text: Montenegro
+- name: Montenegro
   value: ME
 
-- text: Morocco
+- name: Morocco
   value: MA
 
-- text: Mozambique
+- name: Mozambique
   value: MZ
 
-- text: Myanmar
+- name: Myanmar
   value: MM
 
-- text: Namibia
+- name: Namibia
   value: NA
 
-- text: Nauru
+- name: Nauru
   value: NR
 
-- text: Nepal
+- name: Nepal
   value: NP
 
-- text: Netherlands
+- name: Netherlands
   value: NL
 
-- text: Netherlands Antilles
+- name: Netherlands Antilles
   value: AN
 
-- text: New Caledonia
+- name: New Caledonia
   value: NC
 
-- text: New Zealand
+- name: New Zealand
   value: NZ
 
-- text: Nicaragua
+- name: Nicaragua
   value: NI
 
-- text: Niger
+- name: Niger
   value: NE
 
-- text: Nigeria
+- name: Nigeria
   value: NG
 
-- text: Niue
+- name: Niue
   value: NU
 
-- text: Norfolk Island
+- name: Norfolk Island
   value: NF
 
-- text: Northern Mariana Islands
+- name: Northern Mariana Islands
   value: MP
 
-- text: Norway
+- name: Norway
   value: NO
 
-- text: Oman
+- name: Oman
   value: OM
 
-- text: Pakistan
+- name: Pakistan
   value: PK
 
-- text: Palau
+- name: Palau
   value: PW
 
-- text: Palestinian Territory, Occupied
+- name: Palestinian Territory, Occupied
   value: PS
 
-- text: Panama
+- name: Panama
   value: PA
 
-- text: Papua New Guinea
+- name: Papua New Guinea
   value: PG
 
-- text: Paraguay
+- name: Paraguay
   value: PY
 
-- text: Peru
+- name: Peru
   value: PE
 
-- text: Philippines
+- name: Philippines
   value: PH
 
-- text: Pitcairn
+- name: Pitcairn
   value: PN
 
-- text: Poland
+- name: Poland
   value: PL
 
-- text: Portugal
+- name: Portugal
   value: PT
 
-- text: Puerto Rico
+- name: Puerto Rico
   value: PR
 
-- text: Qatar
+- name: Qatar
   value: QA
 
-- text: Reunion
+- name: Reunion
   value: RE
 
-- text: Romania
+- name: Romania
   value: RO
 
-- text: Russian Federation
+- name: Russian Federation
   value: RU
 
-- text: Rwanda
+- name: Rwanda
   value: RW
 
-- text: Saint Helena
+- name: Saint Helena
   value: SH
 
-- text: Saint Kitts And Nevis
+- name: Saint Kitts And Nevis
   value: KN
 
-- text: Saint Lucia
+- name: Saint Lucia
   value: LC
 
-- text: Saint Pierre And Miquelon
+- name: Saint Pierre And Miquelon
   value: PM
 
-- text: Saint Vincent And The Grenadines
+- name: Saint Vincent And The Grenadines
   value: VC
 
-- text: Samoa
+- name: Samoa
   value: WS
 
-- text: San Marino
+- name: San Marino
   value: SM
 
-- text: Sao Tome And Principe
+- name: Sao Tome And Principe
   value: ST
 
-- text: Saudi Arabia
+- name: Saudi Arabia
   value: SA
 
-- text: Senegal
+- name: Senegal
   value: SN
 
-- text: Serbia
+- name: Serbia
   value: RS
 
-- text: Seychelles
+- name: Seychelles
   value: SC
 
-- text: Sierra Leone
+- name: Sierra Leone
   value: SL
 
-- text: Singapore
+- name: Singapore
   value: SG
 
-- text: Slovakia
+- name: Slovakia
   value: SK
 
-- text: Slovenia
+- name: Slovenia
   value: SI
 
-- text: Solomon Islands
+- name: Solomon Islands
   value: SB
 
-- text: Somalia
+- name: Somalia
   value: SO
 
-- text: South Africa
+- name: South Africa
   value: ZA
 
-- text: South Georgia And The South Sandwich Islands
+- name: South Georgia And The South Sandwich Islands
   value: GS
 
-- text: Spain
+- name: Spain
   value: ES
 
-- text: Sri Lanka
+- name: Sri Lanka
   value: LK
 
-- text: Sudan
+- name: Sudan
   value: SD
 
-- text: Suriname
+- name: Suriname
   value: SR
 
-- text: Svalbard And Jan Mayen
+- name: Svalbard And Jan Mayen
   value: SJ
 
-- text: Swaziland
+- name: Swaziland
   value: SZ
 
-- text: Sweden
+- name: Sweden
   value: SE
 
-- text: Switzerland
+- name: Switzerland
   value: CH
 
-- text: Syrian Arab Republic
+- name: Syrian Arab Republic
   value: SY
 
-- text: Taiwan, Province Of China
+- name: Taiwan, Province Of China
   value: TW
 
-- text: Tajikistan
+- name: Tajikistan
   value: TJ
 
-- text: Tanzania, United Republic Of
+- name: Tanzania, United Republic Of
   value: TZ
 
-- text: Thailand
+- name: Thailand
   value: TH
 
-- text: Togo
+- name: Togo
   value: TG
 
-- text: Tokelau
+- name: Tokelau
   value: TK
 
-- text: Tonga
+- name: Tonga
   value: TO
 
-- text: Trinidad And Tobago
+- name: Trinidad And Tobago
   value: TT
 
-- text: Tunisia
+- name: Tunisia
   value: TN
 
-- text: Turkey
+- name: Turkey
   value: TR
 
-- text: Turkmenistan
+- name: Turkmenistan
   value: TM
 
-- text: Turks And Caicos Islands
+- name: Turks And Caicos Islands
   value: TC
 
-- text: Tuvalu
+- name: Tuvalu
   value: TV
 
-- text: Uganda
+- name: Uganda
   value: UG
 
-- text: Ukraine
+- name: Ukraine
   value: UA
 
-- text: United Arab Emirates
+- name: United Arab Emirates
   value: AE
 
-- text: United Kingdom
+- name: United Kingdom
   value: GB
 
-- text: United States
+- name: United States
   value: US
 
-- text: United States Minor Outlying Islands
+- name: United States Minor Outlying Islands
   value: UM
 
-- text: Uruguay
+- name: Uruguay
   value: UY
 
-- text: Uzbekistan
+- name: Uzbekistan
   value: UZ
 
-- text: Vanuatu
+- name: Vanuatu
   value: VU
 
-- text: Venezuela
+- name: Venezuela
   value: VE
 
-- text: Viet Nam
+- name: Viet Nam
   value: VN
 
-- text: Virgin Islands, British
+- name: Virgin Islands, British
   value: VG
 
-- text: Virgin Islands, U.s.
+- name: Virgin Islands, U.s.
   value: VI
 
-- text: Wallis And Futuna
+- name: Wallis And Futuna
   value: WF
 
-- text: Western Sahara
+- name: Western Sahara
   value: EH
 
-- text: Yemen
+- name: Yemen
   value: YE
 
-- text: Zambia
+- name: Zambia
   value: ZM
 
-- text: Zimbabwe
+- name: Zimbabwe
   value: ZW

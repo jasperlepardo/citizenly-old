@@ -1,0 +1,8 @@
+- name: Married
+- name: Single
+- name: Divorced
+- name: De-facto
+- name: Separated
+- name: Widowed
+- name: Other
+- name: Unknown

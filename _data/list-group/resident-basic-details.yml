@@ -1,0 +1,86 @@
+- name: Resident Basic Details
+  action: 
+  method: 
+  layout: horizontal
+  hasLabel: true
+  fields: 
+    - type: text
+      name: Last Name
+      placeholder: 
+      value: last-name
+      icon: 
+      helper: 
+      list-value:
+    - type: text
+      name: First Name
+      placeholder: 
+      value: first-name
+      icon: 
+      helper: 
+      list-value:
+    - type: text
+      name: Middle Name
+      placeholder: 
+      value: middle-name
+      icon: 
+      helper: 
+      list-value:
+    - type: text
+      name: Place of Birth
+      placeholder: 
+      value: place-of-birth
+      icon: 
+      helper: 
+      list-value:
+    - type: date
+      name: Date of Birth
+      placeholder: 
+      value: date-of-birth
+      icon: 
+      helper: 
+      list-value: 
+    - type: select
+      name: Gender
+      placeholder: 
+      value: gender
+      icon: 
+      helper: 
+      list-value: gender
+      selected: 0
+    - type: select
+      name: Civil Status
+      placeholder: 
+      value: civil-status
+      icon: 
+      helper: 
+      list-value: marital-status
+      selected: 1
+    - type: select
+      name: Citizenship
+      placeholder: 
+      value: citizenship
+      icon: 
+      helper: 
+      list-value: country
+      selected: 171
+    - type: text
+      name: Occupation
+      placeholder: 
+      value: occupation
+      icon: 
+      helper: 
+      list-value:
+    - type: button
+      buttons:
+        - type: anchor
+          name: Submit
+          class: danger
+          url: 
+          action:
+          target: 
+        - type: anchor
+          name: Reset
+          class: light
+          url: 
+          action:
+          target: 

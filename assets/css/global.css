@@ -391,7 +391,7 @@ body {
     display: none;
   }
   
-  .list-group-item-edit-mode {
+  .list-group-item-action .list-group-item-edit-mode {
     display: none;
   }
   

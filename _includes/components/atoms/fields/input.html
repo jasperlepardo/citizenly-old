@@ -1,3 +1,6 @@
 {% assign form-name = form.name  | split: " " | join: "-" | downcase %}
 {% assign field-name = field.name | split: " " | join: "-" | downcase %}
-<input class="form-control" id="{{ form-name }}-{{ field-name }}" name="{{ form-name }}-{{ field-name }}" type="{{ field.type }}" value="" placeholder="{{ field.placeholder | default: "Enter " | append: field.name }}" />
+
+{% assign value = page.[field.value] %}
+
+<input class="form-control" id="{{ form-name }}-{{ field-name }}" name="{{ form-name }}-{{ field-name }}" type="{{ field.type }}" value="{{ value }}" placeholder="{{ field.placeholder | default: "Enter " | append: field.name }}" />

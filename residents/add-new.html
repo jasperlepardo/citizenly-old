@@ -1,8 +1,8 @@
 ---
 layout: default
-layout-type: #container | container-fluid
-custom-stylesheet: 
 ---
+
+
 
 <div class="header">
   <button class="sub-heading-btn js-go-back" type="button" onclick="history.back(-1)"> <i class="fas fa-arrow-left"></i></button>
@@ -19,7 +19,7 @@ custom-stylesheet:
         <div class="card-header">
           <h6 class="card-header-title h4">Basic Details</h6>
         </div>
-        {% include components/organisms/list-group.html data=site.data.list-group.residents form=edit-only %}
+        {% include components/organisms/list-group.html data=site.data.list-group.resident-basic-details form=edit-only %}
 
       </div>
 
@@ -42,5 +42,4 @@ custom-stylesheet:
     </div>
   </div>
 
-  {{ content }}
 </main>

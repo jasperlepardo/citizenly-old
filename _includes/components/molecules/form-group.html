@@ -1,25 +1,35 @@
-{% if form.layout == horizontal%}
-  <div class="form-group row">
-  {% if field.type == "divider" %}
-    <hr class="dashed">
+{% if field.type == "divider" %}
+  <hr class="dashed">
+{% elsif field.type == "button" %}
+  {% include components/atoms/buttons.html %}
+{% else %}
+  {% if form.layout == "horizontal" %}
+    <div class="form-group row">
+      {% include components/atoms/fields/label.html %}
+      <div class="{{ field.field-size | default: 'col-md-6' }}">
+        {% if field.icon %}
+          <div class="form-icon form-icon-{{ field.icon-placement | default: "left" }}">
+            {% include components/atoms/fields.html %}
+            {% include components/atoms/fields/icon.html %}
+          </div>
+          {% else %}
+          {% include components/atoms/fields.html %}            
+        {% endif %}
+        {% include components/atoms/fields/helper.html %}
+      </div>
     {% else %}
-    {% include components/atoms/fields/label.html %}
-    <div class="{{ field.field-size | default: 'col-md-6' }}">
-      {% include components/atoms/fields.html %}
+    <div class="form-group">
+      {% include components/atoms/fields/label.html %}
+        {% if field.icon %}
+          <div class="form-icon form-icon-{{ field.icon-placement | default: "left" }}">
+            {% include components/atoms/fields.html %}
+            {% include components/atoms/fields/icon.html %}
+          </div>
+          {% else %}
+          {% include components/atoms/fields.html %}            
+        {% endif %}
       {% include components/atoms/fields/helper.html %}
     </div>
   {% endif %}
   </div>
-  {% else %}
-  {% if field.type == "divider" %}
-    <hr class="dashed">
-    {% elsif field.type == "button" %}
-      {% include components/atoms/buttons.html %}
-    {% else %}
-    <div class="form-group">
-      {% include components/atoms/fields/label.html %}
-      {% include components/atoms/fields.html %}
-      {% include components/atoms/fields/helper.html %}
-    </div>
-  {% endif %}
 {% endif %}

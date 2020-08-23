@@ -3,10 +3,12 @@
 
 {% assign sources = site.data.list-value.[field.list-value] %}
 
+{% assign value = page.[field.value] %}
+
 <select class="form-control" id="{{ form-name }}-{{ field-name }}" name="{{ form-name }}-{{ field-name }}">
   <option value="" selected="" disabled="">{{ field.placeholder | default: "Select " | append: field.name }}</option>
   {% for source in sources %}
-    <option value="{{ source.value | default: source.name }}">{{ source.name }}</option>
+    <option value="{{ source.value | default: source.name }}" {% if value == source.name  %}selected=""{% endif %}>{{ source.name }}</option>
   {% endfor %}
 </select>
 

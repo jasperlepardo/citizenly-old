@@ -1,5 +1,6 @@
 {% assign form-name = form.name  | split: " " | join: "-" | downcase %}
 {% assign field-name = field.name | split: " " | join: "-" | downcase %}
+
 {% if form.hasLabel %}
-  <label class="col-form-label {% if form.layout == horizontal %} col-form-label {{ field.label-size | default: 'col-md-3' }} {% endif %}" for="{{ form-name }}-{{ field-name }}">{{ field.name }}</label>
+  <label class="col-form-label {% if form.layout == "horizontal" %} col-form-label {{ field.label-size | default: 'col-md-3' }} {% endif %}" for="{{ form-name }}-{{ field-name }}">{{ field.name }}</label>
 {% endif %}

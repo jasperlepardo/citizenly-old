@@ -1,0 +1,64 @@
+- name: Address
+  action: 
+  method: 
+  layout: horizontal
+  hasLabel: true
+  fields: 
+    - type: text
+      name: Address Line 1
+      placeholder: 
+      value: 
+      icon: 
+      helper: 
+      list-value:
+    - type: text
+      name: Address Line 2
+      placeholder: 
+      value: 
+      icon: 
+      helper: 
+      list-value:
+    - type: text
+      name: Address Line 3
+      placeholder: 
+      value: 
+      icon: 
+      helper: 
+      list-value:
+    - type: text
+      name: City / Town
+      placeholder: 
+      value: 
+      icon: 
+      helper: 
+      list-value:
+    - type: select
+      name: Country
+      placeholder: 
+      value: 
+      icon: 
+      helper: 
+      list-value: country
+    - type: text
+      name: State / Province / Region
+      placeholder: 
+      value: 
+      icon: 
+      helper: 
+      list-value:
+    - type: text
+      name: ZIP / Postal Code
+      placeholder: 
+      value: 
+      icon: 
+      helper: 
+      list-value:
+    - type: divider
+    - type: button
+      buttons:
+        - type: anchor
+          name: Submit
+          class: 
+          url: 
+          action:
+          target: 
