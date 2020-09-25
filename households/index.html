@@ -19,10 +19,11 @@ heading-subtitle:
     </tr>
   </thead>
   <tbody>
+    {% for household in site.households %}
     <tr>
       <td><input type="checkbox" value="" id=""></td>
-      <td><a href="">148</a></td>
-      <td>P. Ferma</td>
+      <td><a href="{{ household.url }}">{{ household.number }}</a></td>
+      <td>{{ household.street-name }}</td>
       <td>-</td>
       <td>Lepardo, Eleuterio M.</td>
       <td>5</td>
@@ -37,5 +38,6 @@ heading-subtitle:
         </div>
       </td>
     </tr>
+    {% endfor %}
   </tbody>
 </table>

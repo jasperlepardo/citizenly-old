@@ -2,6 +2,8 @@
   {% include components/atoms/fields/input.html %}
 {% elsif field.type == "select" %}
   {% include components/atoms/fields/select.html %}
+  {% elsif field.type == "datalist" %}
+  {% include components/atoms/fields/datalist.html %}
 {% elsif field.type == "textarea" %}
   {% include components/atoms/fields/textarea.html %}
 {% elsif field.type == "plaintext" or include.type == "plainext" %}

@@ -3,4 +3,4 @@
 
 {% assign value = page.[field.value] %}
 
-<input class="form-control" id="{{ form-name }}-{{ field-name }}" name="{{ form-name }}-{{ field-name }}" type="{{ field.type }}" value="{{ value }}" placeholder="{{ field.placeholder | default: "Enter " | append: field.name }}" />
+<input class="form-control" id="{{ form-name | default: "field" }}-{{ field-name }}" name="{{ form-name | default: "field" }}-{{ field-name }}" type="text" value="{{ value }}" placeholder="{{ field.placeholder | default: "Enter " | append: field.name }}" />

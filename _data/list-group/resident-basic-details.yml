@@ -1,4 +1,4 @@
-- name: Resident Basic Details
+- name: Resident
   action: 
   method: 
   layout: horizontal

@@ -27,7 +27,7 @@ fontawesome: "https://kit.fontawesome.com/9eb6b1689c.js"
 
 # material-icon: "https://fonts.googleapis.com/icon?family=Material+Icons"
 
-google-font: "https://fonts.googleapis.com/css?family=Open+Sans:300,400,600&display=swap"
+google-font: "https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&display=swap"
 
 # isPWA: true
 
@@ -41,4 +41,7 @@ stylesheet: # place external url here
 collections:
   residents:
     output: true
-    permalink: residents/:path/
+    permalink: :collection/:path/
+  households:
+    output: true
+    permalink: :collection/:path/

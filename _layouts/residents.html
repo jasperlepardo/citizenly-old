@@ -1,46 +1,89 @@
 ---
 layout: default
-layout-type: #container | container-fluid
+layout-type: container-fluid
 custom-stylesheet: 
 ---
 
-<div class="header">
-  <button class="sub-heading-btn js-go-back" type="button" onclick="history.back(-1)"> <i class="fas fa-arrow-left"></i></button>
-  <h1 class="header-title h5">{{ page.last-name }}, {{ page.first-name }} {{ page.middle-name }}</h1>
-</div>
-<main class="container" id="main-content">
-  <div class="heading">
-    <h1 class="heading-title h3">{{ page.heading-title }}</h1>
-    <p class="heading-subtitle">{{ page.heading-subtitle }}</p>
-  </div>
-  <div class="row">
-    <div class="col-md-8">
-      <div class="card card-bordered card-rounded mb-3">
-        <div class="card-header">
-          <h6 class="card-header-title h4">Basic Details</h6>
-        </div>
-        {% include components/organisms/list-group.html data=site.data.list-group.residents form=edit-only %}
-
-      </div>
-
-      <div class="card card-bordered card-rounded mb-3">
-        <div class="card-header">
-          <h6 class="card-header-title h4">Health</h6>
-        </div>
-        <div class="list-group list-group-flush list-group-editable list-group-sm">
-        </div>
-      </div>
-
-      <div class="card card-bordered card-rounded mb-3">
-        <div class="card-header">
-          <h6 class="card-header-title h4">Assets</h6>
-        </div>
-        <div class="list-group list-group-flush list-group-editable list-group-sm">
-        </div>
-      </div>
-
+<div class="heading">
+  <div class="media">
+    <div class="mr-3">
+      <img class="rounded-circle" src="{{ site.baseurl }}/assets/img/avatar.png" alt="" width="112" height="112">
     </div>
-  </div>
+    <div class="media-content align-self-center">
+      <h1 class="heading-title h3">{{ page.first-name }} {{ page.last-name }}</h1>
+      <p class="heading-subtitle">{{ page.occupation }}</p>
+      <a href="{{ site.baseurl }}/households/{{ page.household.number }}/">{{ page.household.number }} {{ page.household.street-name }} St., {{ page.household.barangay }}, {{ page.household.municipality }}, {{ page.household.province }}</a>
+    </div>
+  </div>  
+</div>
+{% include components/molecules/nav.html data=site.data.navigation.residents %}
 
-  {{ content }}
-</main>
+<div class="tab-content">
+  <div class="tab-pane fade show active" id="personal-details-tab">
+    <div class="row">
+      <div class="col-sm-8">
+        <p class="lead">Basic Information</p>
+        <dl class="row">
+          <dt class="col-sm-3">Full Name:</dt>
+          <dd class="col-sm-9">{{ page.first-name }} {{ page.middle-name }} {{ page.last-name }}</dd>
+          <dt class="col-sm-3">Date of Birth:</dt>
+          <dd class="col-sm-9">{{ page.date-of-birth | date: "%B %d, %Y" }}</dd>
+          <dt class="col-sm-3">Place of Birth:</dt>
+          <dd class="col-sm-9">{{ page.place-of-birth }}</dd>
+          <dt class="col-sm-3">Gender:</dt>
+          <dd class="col-sm-9">{{ page.gender }}</dd>
+          <dt class="col-sm-3">Civil Status:</dt>
+          <dd class="col-sm-9">{{ page.civil-status }}</dd>
+          <dt class="col-sm-3">Citizenship:</dt>
+          <dd class="col-sm-9">{{ page.citizenship }}</dd>
+        </dl>
+      </div>
+      <div class="col-sm-4">
+      </div>
+    </div>
+
+
+    <hr>
+
+
+    <div class="row">
+      <div class="col-sm-8">
+        <p class="lead">Educational Attainment</p>
+        <a href="">Add Education</a>
+      </div>
+      <div class="col-sm-4">
+      </div>
+    </div>
+
+
+    <hr>
+
+
+  </div>
+  <div class="tab-pane fade" id="health-records-tab">
+    
+    <div class="row">
+      <div class="col-sm-4">
+
+        <div class="card">
+          <div class="card-body">
+            <dl>
+              <dt>Bacillus Calmette-Guérin</dt>
+              <dd></dd>
+            </dl>
+          </div>
+        </div>
+
+      </div>
+      <div class="col-sm-8">
+
+      </div>
+    </div>
+
+
+
+
+  </div>
+  <div class="tab-pane fade" id="assets-tab">Assets Tab</div>
+</div>
+

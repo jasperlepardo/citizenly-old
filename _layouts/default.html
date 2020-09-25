@@ -8,9 +8,7 @@ custom-stylesheet:
   <a class="navbar-brand" href="{{ site.baseurl }}/">Citizenly</a>
   <div class="collapse navbar-collapse" id="global-slider">
     <div class="navbar-wrapper">
-      <a href="">
-        <p>Anuling Cerca I<br/>Mendez Nuñez, Cavite</p>
-      </a>
+      <a href="">Anuling Cerca I<br/>Mendez Nuñez, Cavite</a>
       {% include components/molecules/nav.html data=site.data.navigation.global %}
       <ul class="navbar-nav flex-column mt-auto">
         <li class="nav-item dropup">
@@ -35,19 +33,19 @@ custom-stylesheet:
 </div>
 
 <div id="main-panel">
-  {% if layout.page-layout == "empty" %}
-    {{ content }}
-    {% else %}
+  {% if page.header-title %}
     <div class="header">
       <h1 class="header-title h5">{{ page.header-title }}</h1>
     </div>
-    <main class="{% if page.layout-type %}{{page.layout-type}}{% else %}{{ layout.layout-type | default: "container"}}{%endif%}" id="main-content">
+  {% endif %}
+  <main class="{% if page.layout-type %}{{page.layout-type}}{% else %}{{ layout.layout-type | default: "container"}}{%endif%}" id="main-content">
+    {% if page.heading-title %}
       <div class="heading">
         <h1 class="heading-title h3">{{ page.heading-title }}</h1>
         <p class="heading-subtitle">{{ page.heading-subtitle }}</p>
       </div>
-      {{ content }}
-    </main>
-  {% endif %}
+    {% endif %}
+    {{ content }}
+  </main>
 </div>
 

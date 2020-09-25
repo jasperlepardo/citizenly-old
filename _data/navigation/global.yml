@@ -6,10 +6,10 @@
     url: dashboard.html
   - text: Residents
     icon: fas fa-users
-    url: residents.html
+    url: residents/
   - text: Households
     icon: fas fa-home
-    url: households.html
+    url: households/
   - text: Business
     icon: fas fa-building
     url: business.html

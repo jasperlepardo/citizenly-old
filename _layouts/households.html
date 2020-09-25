@@ -1,0 +1,53 @@
+---
+layout: default
+layout-type: container-fluid
+custom-stylesheet: 
+---
+
+<table class="table table-hover">
+  <thead>
+    <tr>
+      <th style="width: 1px;"></th>
+      <!-- <th><a href="">ID Number</a></th> -->
+      <th><a href="">Name</a></th>
+      <!-- <th>Address</th> -->
+      <!-- <th>Purok</th> -->
+      <th><a href="">Place of Birth</a></th>
+      <th><a href="">Date of Birth</a></th>
+      <th><a href="">Sex</a></th>
+      <th><a href="">Civil Status</a></th>
+      <th><a href="">Citizenship</a></th>
+      <th><a href="">Occupation</a></th>
+      <th style="width: 1px;"></th>
+    </tr>
+  </thead>
+  <tbody>
+    {% assign residents = site.residents | where: "household.number", page.number | sor: "date-of-birth" %}
+
+    {% for resident in residents %}
+      <tr>
+        <td><input type="checkbox" value="" id=""></td>
+        <!-- <td>PSN-1234-5678912-3</td> -->
+        <td><a href="{{ resident.url }}">{{ resident.last-name }}, {{ resident.first-name }} {{ resident.middle-name }}</a></td>
+        <!-- <td>I48 P. Ferma</td> -->
+        <!-- <td>-</td> -->
+        <td>{{ resident.place-of-birth }}</td>
+        <td>{{ resident.date-of-birth | date: "%B %d, %Y" }}</td>
+        <td>{{ resident.sex }}</td>
+        <td>{{ resident.civil-status }}</td>
+        <td>{{ resident.citizenship }}</td>
+        <td>{{ resident.occupation }}</td>
+        <td>
+          <div class="dropdown">
+            <a href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="fas fa-ellipsis-v"></i></a>
+            <div class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenuLink">
+              <a class="dropdown-item" href="#">Add</a>
+              <a class="dropdown-item" href="#">Edit</a>
+              <a class="dropdown-item" href="#">Delete</a>
+            </div>
+          </div>
+        </td>
+      </tr>
+    {% endfor %}
+  </tbody>
+</table>

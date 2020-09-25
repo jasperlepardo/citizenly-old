@@ -2,8 +2,6 @@
 layout: default
 ---
 
-
-
 <div class="header">
   <button class="sub-heading-btn js-go-back" type="button" onclick="history.back(-1)"> <i class="fas fa-arrow-left"></i></button>
   <h1 class="header-title h5">{{ page.last-name }}, {{ page.first-name }} {{ page.middle-name }}</h1>
@@ -20,17 +18,12 @@ layout: default
           <h6 class="card-header-title h4">Basic Details</h6>
         </div>
         {% include components/organisms/list-group.html data=site.data.list-group.resident-basic-details form=edit-only %}
-
       </div>
-
       <div class="card card-bordered card-rounded mb-3">
         <div class="card-header">
           <h6 class="card-header-title h4">Health</h6>
         </div>
-        <div class="list-group list-group-flush list-group-editable list-group-sm">
-        </div>
       </div>
-
       <div class="card card-bordered card-rounded mb-3">
         <div class="card-header">
           <h6 class="card-header-title h4">Assets</h6>
@@ -38,8 +31,6 @@ layout: default
         <div class="list-group list-group-flush list-group-editable list-group-sm">
         </div>
       </div>
-
     </div>
   </div>
-
 </main>

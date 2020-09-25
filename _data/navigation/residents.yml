@@ -1,0 +1,12 @@
+- class: "nav-tabs"
+  type: tabs
+  menu: 
+  - text: Personal Details
+    icon: fas fa-tachometer-alt
+    url: personal-details
+  - text: Health Record
+    icon: fas fa-users
+    url: health-records
+  - text: Assets
+    icon: fas fa-home
+    url: assets
