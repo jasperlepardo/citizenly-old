@@ -22,7 +22,7 @@ header-title: Residents
     </tr>
   </thead>
   <tbody>
-    {% for resident in site.data.residents %}
+    {% for resident in site.residents %}
       <tr>
         <td><input type="checkbox" value="" id=""></td>
         <!-- <td>PSN-1234-5678912-3</td> -->
@@ -31,7 +31,7 @@ header-title: Residents
         <!-- <td>-</td> -->
         <td>{{ resident.place-of-birth }}</td>
         <td>{{ resident.date-of-birth | date: "%B %d, %Y" }}</td>
-        <td>{{ resident.sex }}</td>
+        <td>{{ resident.gender }}</td>
         <td>{{ resident.civil-status }}</td>
         <td>{{ resident.citizenship }}</td>
         <td>{{ resident.occupation }}</td>
